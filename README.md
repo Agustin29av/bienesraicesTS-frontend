@@ -1,7 +1,4 @@
 ✅ Proyecto 2: bienesraicesTS-frontend (Frontend)
-markdown
-Copiar
-Editar
 # Bienes Raíces - Frontend (React + Vite + TypeScript + TailwindCSS)
 
 Este es el frontend de la aplicación de Bienes Raíces.  
