@@ -16,7 +16,7 @@ React Router DOM: Para la navegación y el enrutamiento en la aplicación.
 Sigue estos pasos para configurar y ejecutar el frontend localmente.
 
 1. Clonar el Repositorio
-git clone <URL_DE_TU_REPOSITORIO_FRONTEND>
+git clone [https://github.com/Agustin29av/bienesraicesTS-frontend]
 cd bienesraices-frontend
 
 2. Instalar Dependencias
