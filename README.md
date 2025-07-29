@@ -1,53 +1,102 @@
-Bienes Raíces App (Frontend)
-Este es el frontend de la aplicación de Bienes Raíces, desarrollado con React y estilizado con Tailwind CSS. Se conecta a la API del backend para gestionar y mostrar información sobre propiedades, usuarios y vendedores.
+✅ Proyecto 2: bienesraicesTS-frontend (Frontend)
+markdown
+Copiar
+Editar
+# Bienes Raíces - Frontend (React + Vite + TypeScript + TailwindCSS)
 
-🚀 Tecnologías Utilizadas
-React: Biblioteca JavaScript para construir interfaces de usuario.
+Este es el frontend de la aplicación de Bienes Raíces.  
+Está desarrollado con React, Vite y TypeScript, utilizando TailwindCSS para el diseño.  
+Consume los endpoints de la API desarrollada en el backend (`bienesraicesTS`).
 
-TypeScript: Lenguaje de programación que añade tipado estático a JavaScript.
+---
 
-Vite: Herramienta de construcción rápida para proyectos web.
+## 🚀 Tecnologías Utilizadas
 
-Tailwind CSS: Framework CSS de utilidad para un diseño rápido y responsivo.
+- **React**: Librería para construir interfaces de usuario.
+- **TypeScript**: Lenguaje con tipado estático que mejora el desarrollo con React.
+- **Vite**: Herramienta de construcción rápida para proyectos modernos con React.
+- **TailwindCSS**: Framework de CSS utilitario para estilos rápidos y responsivos.
+- **ESLint**: Linter para mantener buenas prácticas de código.
+- **PostCSS + Autoprefixer**: Para compatibilidad de estilos entre navegadores.
 
-React Router DOM: Para la navegación y el enrutamiento en la aplicación.
+---
 
-⚙️ Configuración del Proyecto
-Sigue estos pasos para configurar y ejecutar el frontend localmente.
+## 🛠️ Requisitos Previos
 
-1. Clonar el Repositorio
+- [Node.js](https://nodejs.org) (versión 16+ recomendada)
+- [NPM](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+
+---
+
+## ⚙️ Configuración del Proyecto
+
+### 1. Clonar el repositorio
+
+```bash
 git clone https://github.com/Agustin29av/bienesraicesTS-frontend
-cd bienesraices-frontend
-
-2. Instalar Dependencias
+cd bienesraicesTS-frontend
+2. Instalar dependencias
+bash
+Copiar
+Editar
 npm install
+🌈 Configuración de TailwindCSS
+Este proyecto ya incluye configuración básica para Tailwind:
 
+tailwind.config.js creado con npx tailwindcss init -p
+
+postcss.config.js para usar autoprefixer
+
+Archivo index.css con las directivas:
+
+css
+Copiar
+Editar
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ▶️ Ejecutar la Aplicación
-Para iniciar el servidor de desarrollo:
-
+bash
+Copiar
+Editar
 npm run dev
+Esto iniciará el servidor local de desarrollo en:
 
-La aplicación estará disponible en http://localhost:5173/ (o el puerto que Vite te asigne).
+arduino
+Copiar
+Editar
+http://localhost:5173
+🔗 Integración con la API
+Este frontend consume la API creada en el backend (bienesraicesTS).
+Asegúrate de que la API esté corriendo en http://localhost:3000 o configurá los endpoints según tu entorno.
 
-🤝 Conexión con el Backend
-¡Importante! Para que esta aplicación funcione correctamente, el backend de Bienes Raíces (disponible en su propio repositorio) debe estar ejecutándose en http://localhost:3000. Asegúrate de iniciar el backend antes de ejecutar el frontend.
+🧱 Estructura del Proyecto
+bash
+Copiar
+Editar
+src/
+│
+├── assets/          # Imágenes y recursos estáticos
+├── components/      # Componentes reutilizables
+├── pages/           # Páginas del sitio como Inicio, Nosotros, Propiedades
+├── App.tsx          # Componente raíz
+├── main.tsx         # Punto de entrada
+├── index.css        # Estilos globales
+└── vite-env.d.ts    # Tipado de Vite + TypeScript
+💡 Funcionalidades
+Listado de propiedades desde la API
 
-✨ Características Principales (Actuales)
-Navegación: Utiliza React Router DOM para la navegación entre páginas.
+Vista de detalle de propiedad
 
-Registro de Usuarios: Formulario para crear nuevas cuentas de usuario.
+Navegación entre páginas (Inicio, Nosotros, Contacto, etc.)
 
-Inicio de Sesión: Formulario para que los usuarios existentes inicien sesión y obtengan un token JWT.
+Interfaz responsiva y estilizada con TailwindCSS
 
-Estilos Modernos: Implementado con Tailwind CSS para un diseño limpio y responsivo.
-
-🔜 Próximas Funcionalidades
-Gestión del estado de autenticación global (Auth Context).
-
-Página de listado de propiedades.
-
-Página de detalle de propiedad.
-
-Formularios para crear, editar y eliminar propiedades (protegidos por rol).
-
-Manejo de roles de usuario en la interfaz (comprador, vendedor, administrador).
+📦 Build para Producción
+bash
+Copiar
+Editar
+npm run build
+👤 Autor
+Desarrollado por Agustín Avilés
+GitHub - Agustin29av
